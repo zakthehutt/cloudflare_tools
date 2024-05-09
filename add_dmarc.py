@@ -42,7 +42,7 @@ def get_total_zone_pages(per_page=50):
     return pages
 
 
-# get all zones from cloudflare
+# get all zones from cloudflare account
 def get_all_zones(pages, per_page=50):
     zones = []
     for page in range(1,pages+1):
@@ -100,7 +100,6 @@ def create_dmarc_record(zone_id, zone_name, dmarc_policy):
     return response.json()
 
 
-
 def main():
     pages = get_total_zone_pages()
     all_zones = get_all_zones(pages)
@@ -115,7 +114,7 @@ def main():
         records = get_dns_records(zone_id)
         for record in records:
             dmarc_name = f'_dmarc.{zone_name}'
-            if record['type'] == 'TXT' and record['name'] == dmarc_name:
+            if (record['type'] == 'TXT' and record['name'] == dmarc_name) or (record['type'] == 'TXT' and record['name'] == '_dmarc'):
                 has_dmarc = True
         if not has_dmarc:
             print(f'{zone_name} has no DMARC record, now creating...')
