@@ -2,7 +2,7 @@
 <br/><br/>
 Contributors: zakthehutt, wako104
 <br/>
-Tags: DNS. Cloudflare API
+Tags: DNS, Cloudflare API
 <br/>
 Requires: Python3, python-cloudflare wrapper
 
