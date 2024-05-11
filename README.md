@@ -11,7 +11,7 @@ These Cloudflare API tools simplify applying changes across zones within your Cl
 ## Versions:
 
 #### 1.1 | May 10th, 2024
-* Find and Replace: Uses a defined record to alter another record within all zones.
+* Find and Replace: Uses a defined record to alter another record within all matching zones.
 
 #### 1.0 | May 9th, 2024 
 * ADD DMARC: Allows you to search across all zones and add a DMARC where any are missing.
