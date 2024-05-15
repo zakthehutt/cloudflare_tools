@@ -1,6 +1,7 @@
 import sys
 from cfscript.get_zones import get_all_zones
 
+
 def main():
     if len(sys.argv) > 1:
         email = sys.argv[1]
@@ -12,7 +13,7 @@ def main():
     'Content-Type': 'application/json'
     }
 
-    zones = get_all_zones(headers=headers)
+    # zones = get_all_zones(headers=headers)
     
 
 if __name__ == "__main__":
