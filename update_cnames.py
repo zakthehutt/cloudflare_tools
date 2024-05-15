@@ -2,7 +2,6 @@ import requests
 import time
 
 # config
-
 API_KEY = 'YOUR_API_KEY'
 EMAIL = 'YOUR_EMAIL'
 HEADERS = {
