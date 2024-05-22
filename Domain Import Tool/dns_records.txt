@@ -1,0 +1,18 @@
+{"type": "A", "name": "@", "content": "YOUR_IP_ADDRESS", "ttl": 1, "proxied": true}
+{"type": "A", "name": "autodiscover", "content": "YOUR_IP_ADDRESS", "ttl": 1, "proxied": true}
+{"type": "A", "name": "cpanel", "content": "YOUR_IP_ADDRESS", "ttl": 1, "proxied": true}
+{"type": "A", "name": "cpcalendars", "content": "YOUR_IP_ADDRESS", "ttl": 1, "proxied": true}
+{"type": "A", "name": "cpcontacts", "content": "YOUR_IP_ADDRESS", "ttl": 1, "proxied": true}
+{"type": "A", "name": "ftp", "content": "YOUR_IP_ADDRESS", "ttl": 1, "proxied": true}
+{"type": "A", "name": "webdisk", "content": "YOUR_IP_ADDRESS", "ttl": 1, "proxied": true}
+{"type": "A", "name": "webmail", "content": "YOUR_IP_ADDRESS", "ttl": 1, "proxied": true}
+{"type": "A", "name": "whm", "content": "YOUR_IP_ADDRESS", "ttl": 1, "proxied": true}
+{"type": "CNAME", "name": "www", "content": "@", "ttl": 1, "proxied": true}
+{"type": "CNAME", "name": "mail", "content": "YOU_MAIL_SERVER", "ttl": 1, "proxied": false}
+{"type": "MX", "name": "@", "content": "@", "ttl": 1, "priority": 0}
+{"type": "TXT", "name": "@", "content": "v=spf1 +a +mx +ip4:YOUR_IP_ADDRESS include:spf.your_mail_server.com ~all", "ttl": 1}
+{"type": "TXT", "name": "_dmarc", "content": "v=DMARC1; p=reject; sp=reject;", "ttl": 1}
+{"type": "TXT", "name": "default._domainkey", "content": "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAy/oYjFvx02Em4iazyyRZP3zjdhx3mKuwc9qwXBR3APz8TzDvJhY1cOk+5RxnaEcIZ0Tju3WDfor2CJfQ/h/GKGGI/zG67HJ/Oxb2dWjZLmLx71D9UEFyehcyzsxRgyKpOUPxTbzQ5AgO7gTB1cpP41XiH2HB/9NSgYAxR+C0GElgdcXwbKWdA2I1rfpCRM1Oux7sTY41TWE0YrZ/mFNF2eYsKHoByXZqD/aZpNvgEAbZLI9zpBZ7KQXZr8TJKfNMvzKOYJYnuo3KlT7mV+pcIv2BpEVewHi0hGZoOBrYXjbxHmzY5wA61io9VaCG+3wC6vp0yOuIihsCjUBXP0O3OQIDAQAB;", "ttl": 1}
+{"type": "TXT", "name": "_cpanel-dcv-test-record", "content": "_cpanel-dcv-test-record=3VB2F4Mj1_JzopUJ_tf2ssjMUso_ufNVMwJ93uLgBftBPHODq2a5Dvz7qmlgTAjh", "ttl": 1}
+{"type": "TXT", "name": "_acme-challenge", "content": "wEVytMNmhphbvOXAO_N-w1RoNx0eeOGT2ydJ5veFQdo", "ttl": 1}
+{"type": "TXT", "name": "_acme-challenge.www", "content": "GfVPXq9oENTIIvjEQxYCMM2J7cYkL2lLTdo_Q0Uctec", "ttl": 1}
