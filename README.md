@@ -10,6 +10,9 @@ These Cloudflare API tools simplify applying changes across zones within your Cl
 
 ## Versions:
 
+#### 1.2 | May 22nd, 2024
+* Domain Import Tool: This tool uses two files (TXT) to import domains in bulk, insert domains on their own line in the domains.txt file and define your records in the dns_records.txt file using JSON formatting.
+
 #### 1.1 | May 10th, 2024
 * Find and Replace: Uses a defined record to alter another record within all matching zones.
 
